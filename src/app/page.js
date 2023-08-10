@@ -34,10 +34,10 @@ export default function HomePage() {
             replies={comments.replies}
           />
           <Reply
-            username={comments.replies.username}
-            replyText={comments.replies.replyText}
-            likeNum={comments.replies.likeNum}
-            userImagePath={comments.replies.userImagePath}
+            username={comments.replies[0].username}
+            replyText={comments.replies[0].replyText}
+            likeNum={comments.replies[0].likeNum}
+            userImagePath={comments.replies[0].userImagePath}
           />
 
           {/* <span className="text-white">

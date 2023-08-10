@@ -33,7 +33,14 @@ export const Comment = ({
         </div>
       </div>
       {/* map-loop render Reply component here */}
-      const loop = [{Reply}]
+      {Reply.map((replies) => (
+        <Reply
+          userImagePath={replies.userImagePath}
+          username={replies.username}
+          replyText={replies.replyText}
+          likeNum={replies.likeNum}
+        />
+      ))}
     </div>
   );
 };
