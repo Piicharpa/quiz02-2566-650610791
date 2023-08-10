@@ -21,7 +21,7 @@ export default function HomePage() {
           <PostOwner
             fullName="Picharpa Eamkanitchart"
             studentId="650610791"
-            ProfileImg={"publicprofileImagespopcat.png"}
+            ProfileImg={"public/profileImages/Screenshot (94).png"}
             postText="Quiz ง่ายจังเลยครับ ขอยาก ๆ กว่านี้ได้ไหม #261207"
             likeNum="100 คน"
             commentt={Comment}
@@ -34,10 +34,10 @@ export default function HomePage() {
             replies={comments.replies}
           />
           <Reply
-            userImagePath={comments.replies.userImagePath}
             username={comments.replies.username}
             replyText={comments.replies.replyText}
             likeNum={comments.replies.likeNum}
+            userImagePath={comments.replies.userImagePath}
           />
 
           {/* <span className="text-white">
